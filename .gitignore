@@ -8,3 +8,8 @@
 
 # IDE files
 /.idea/
+
+
+# Added by cargo
+
+/target
