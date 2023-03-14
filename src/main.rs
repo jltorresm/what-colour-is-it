@@ -14,11 +14,13 @@ fn App() -> Html {
         });
     }
 
-    let bgcolor = format!("background-color: {};", (*counter).format("#%H%M%S"));
+    let color = (*counter).format("#%H%M%S");
+    let bgcolor = format!("background-color: {color};");
 
     html! {
         <main style={bgcolor}>
             <time>{ (*counter).format("%H:%M:%S") }</time>
+            <span>{ color }</span>
         </main>
     }
 }
