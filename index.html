@@ -18,7 +18,7 @@
                 justify-content: center;
             }
             time {
-                font-size: 12em;
+                font-size: 18em;
                 color: white;
                 font-family: monospace;
                 text-shadow: 0 0 50px white;
@@ -29,6 +29,13 @@
                 font-family: monospace;
                 font-size: 1.5em;
             }
+            @media screen and (max-width: 1024px) { time { font-size: 16em; } }
+            @media screen and (max-width: 910px) { time { font-size: 14em; } }
+            @media screen and (max-width: 800px) { time { font-size: 12em; } }
+            @media screen and (max-width: 700px) { time { font-size: 10em; } }
+            @media screen and (max-width: 600px) { time { font-size: 8em; } }
+            @media screen and (max-width: 500px) { time { font-size: 7em; } }
+            @media screen and (max-width: 400px) { time { font-size: 6em; } }
     </style>
 </head>
 </html>
